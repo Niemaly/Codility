@@ -2,6 +2,7 @@ package task;
 
 
 import java.util.Arrays;
+import java.util.function.IntSupplier;
 
 public class SolutionMinValueOfArray {
 
@@ -13,7 +14,7 @@ public class SolutionMinValueOfArray {
 
             }
         }
-        return Arrays.stream(A).min().getAsInt();
+        return Arrays.stream(A).min().orElseGet(()-> 0);
     }
 
 

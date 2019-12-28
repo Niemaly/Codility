@@ -37,6 +37,20 @@ public class TestSolutions {
         );
     }
 
+
+
+    private static Stream<Arguments> provideDataForMinValueOfArrayTask() {
+        return Stream.of(
+
+                Arguments.of(new int[]{1, 2, 5, 10, 8, 20},                       1),
+                Arguments.of(new int[]{-100, 12, -200 , 0},                 -200),
+                Arguments.of(new int[]{ 0 },       0),
+                Arguments.of(new int[]{ 0,0,0,0,0,1 },       0),
+                Arguments.of(new int[]{ },       0)
+
+        );
+    }
+
     private static Stream<Arguments> provideDataForTriangularTest() {
         return Stream.of(
 
@@ -213,13 +227,10 @@ public class TestSolutions {
 
 
     @ParameterizedTest
-    @MethodSource("prvideCookies")
+    @MethodSource("provideDataForMinValueOfArrayTask")
     public void shouldReturnSmallestInt(int [] input, int expected){
         SolutionMinValueOfArray sol = new SolutionMinValueOfArray();
-
-        System.out.println(sol.solution(input));
         assertTrue(sol.solution(input) == expected);
-
     }
 
 
