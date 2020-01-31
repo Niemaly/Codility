@@ -2,7 +2,7 @@ package src.smallestIntThatisNotInArray;
 
 import java.util.Arrays;
 
-public class Solution {
+public class SmallestIntInArray {
 
     int integer = 1;
 

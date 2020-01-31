@@ -3,7 +3,7 @@ package chackIsAnyTriangularExistInAnArray;
 import java.util.*;
 
 
-public class Solution2 {
+public class CheckIsAnyTriangularExistInAnArray {
 
     public int solution(int[] A){
         Arrays.sort(A);
