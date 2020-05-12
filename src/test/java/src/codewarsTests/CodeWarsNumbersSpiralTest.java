@@ -1,4 +1,4 @@
-package codewarsTests;
+package src.codewarsTests;
 
 import src.codewars.codeWarsSpiralTask.CodeWarsNumbersSpiral;
 import org.junit.jupiter.api.Assertions;
