@@ -55,7 +55,7 @@ public class ResultTest {
     @MethodSource("provideData")
     public void should(List<Integer> input, Long expected) {
         Result1 result = new Result1();
-        assertTrue(result.minStart(input)==(expected));
+        assertTrue(result.minStart2(input)==(expected));
 
     }
 
